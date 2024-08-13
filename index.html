@@ -1,301 +1,360 @@
 <Html>
 
-    <head>
-        <title>
-    
-        </title>
-    </head>
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    
-    <body style="background-color:#EEEEEE; ">
-        <style>
-            body {
-                font-family: 'Inter';
-            }
-    
-            input {
-                height: 2em;
-                width: 20em;
-                vertical-align: middle;
-            }
-    
-            label {
-                color: black;
-            }
-    
-            p {
-                text-align: justify
-            }
-    
-            .container {
-                width: 95%;
-                background-color: #EEEEEE;
-                font-size: 12px;
-                text-align: left;
-            }
-    
-            .input {
-                margin: 5px 0px;
-                padding: 15px 10px;
-                border: none;
-                border: none;
-                -webkit-border-radius: 10px;
-                -moz-border-radius: 10px;
-                border-radius: 5px;
-                border: 1px solid #EEEEEE;
-                outline: 0;
-                height: 25px;
-                width: 100%;
-                font-size: 12px;
-            }
-    
-            .custom-select {
-                margin: 5px 0px;
-                padding: 5px 10px;
-                /* border: none; */
-                border-radius: 5px;
-                border: 1px solid #EEEEEE;
-                /* outline: 0; */
-                height: 30px;
-                width: 100%;
-                font-size: 12px;
-                font-family: 'Inter';
-            }
-    
-            .input:focus {
-                border: 1px solid #DD0150;
-            }
-    
-            .custom-select:focus {
-                border: 1px solid #DD0150;
-            }
-    
-            .submit {
-                background-color: #DD0150;
-                padding: 15px 15px 15px 15px;
-                width: 100%;
-                border-radius: 5px;
-                font-size: 14px;
-                font-weight: bold;
-                border: none;
-                color: white;
-                height: 45px;
-            }
-    
-            .submit:hover {
-                background-color: #f74586;
-            }
-    
-            .result {
-                font-weight: bold;
-                margin: 10px 0px 20px;
-            }
-    
-            select option:checked {
-                background-color: #DD0150 !important;
-                color: white !important;
-            }
-        </style>
-        <center>
-    
-    
-            <div class="container">
-                <label id="header"></label> <br>
-                <br>
-    
-                <form>
-                    <label id="lname"></label> <Br>
-                    <input class="input" id="name" type="text" value="" name="name" required/>
-                    <div id="rname" class="result"></div>
-    
-                    <label id="lmobile"></label> <Br>
-                    <input class="input" id="mobile" type="tel"
-                        pattern="(\+62 ((\d{3}([ -]\d{3,})([- ]\d{4,})?)|(\d+)))|(\(\d+\) \d+)|\d{3}( \d+)+|(\d+[ -]\d+)|\d+"
-                        name="mobile" size="15" value="" required/>
-                    <div id="rmobile" class="result"></div>
-    
-                    <label id="lemail"></label> <Br>
-                    <input class="input" id="email" type="email" value="" name="email" size="15" required/>
-                    <div id="remail" class="result"></div>
-    
-                    <label id="lOrderID"></label> <Br>
-                    <input class="input" id="OrderID" type="text" value="" name="OrderID" required/>
-                    <div id="rOrderID" class="result"></div>
-    
-    
-                    <label id="lissue"></label><br>
-                    <select class="custom-select" id="issue" name="issue" required>
-                        <option class="select-opt" id="opt-1"></option>
-                        <option class="select-opt" id="opt-2"></option>
-                        <option class="select-opt" id="opt-3"></option>
-                        <option class="select-opt" id="opt-4"></option>
-                        <option class="select-opt" id="opt-5"></option>
-                        <option class="select-opt" id="opt-6"></option>
-                        <!-- <option class="select-opt" id="opt-7"></option>
+<head>
+    <title>
+
+    </title>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+<body style="background-color:#EEEEEE; ">
+    <style>
+        body {
+            font-family: 'Inter';
+        }
+
+        input {
+            height: 2em;
+            width: 20em;
+            vertical-align: middle;
+        }
+
+        label {
+            color: black;
+        }
+
+        p {
+            text-align: justify
+        }
+
+        .container {
+            width: 95%;
+            background-color: #EEEEEE;
+            font-size: 12px;
+            text-align: left;
+        }
+
+        .input {
+            margin: 5px 0px;
+            padding: 15px 10px;
+            border: none;
+            border: none;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 5px;
+            border: 1px solid #EEEEEE;
+            outline: 0;
+            height: 25px;
+            width: 100%;
+            font-size: 12px;
+        }
+
+        .custom-select {
+            margin: 5px 0px;
+            padding: 5px 10px;
+            /* border: none; */
+            border-radius: 5px;
+            border: 1px solid #EEEEEE;
+            /* outline: 0; */
+            height: 30px;
+            width: 100%;
+            font-size: 12px;
+            font-family: 'Inter';
+        }
+
+        .input:focus {
+            border: 1px solid #DD0150;
+        }
+
+        .custom-select:focus {
+            border: 1px solid #DD0150;
+        }
+
+        .submit {
+            background-color: #DD0150;
+            padding: 15px 15px 15px 15px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            color: white;
+            height: 45px;
+        }
+
+        .submit:hover {
+            background-color: #f74586;
+        }
+
+        .result {
+            font-weight: bold;
+            margin: 10px 0px 20px;
+        }
+
+        select option:checked {
+            background-color: #DD0150 !important;
+            color: white !important;
+        }
+    </style>
+    <center>
+
+
+        <div class="container">
+            <label id="header"></label> <br>
+            <br>
+
+            <form>
+                <label id="lname"></label> <Br>
+                <input class="input" id="name" type="text" value="" name="name" required />
+                <div id="rname" class="result"></div>
+
+                <label id="lmobile"></label> <Br>
+                <input class="input" id="mobile" type="tel"
+                    pattern="(\+62 ((\d{3}([ -]\d{3,})([- ]\d{4,})?)|(\d+)))|(\(\d+\) \d+)|\d{3}( \d+)+|(\d+[ -]\d+)|\d+"
+                    name="mobile" size="15" value="" required />
+                <div id="rmobile" class="result"></div>
+
+                <label id="lemail"></label> <Br>
+                <input class="input" id="email" type="email" value="" name="email" size="15" required />
+                <div id="remail" class="result"></div>
+
+                <label id="lOrderID"></label> <Br>
+                <input class="input" id="OrderID" type="text" value="" name="OrderID" required />
+                <div id="rOrderID" class="result"></div>
+
+
+                <label id="lissue"></label><br>
+                <select class="custom-select" id="issue" name="issue" required>
+                    <option class="select-opt" id="opt-1"></option>
+                    <option class="select-opt" id="opt-2"></option>
+                    <option class="select-opt" id="opt-3"></option>
+                    <option class="select-opt" id="opt-4"></option>
+                    <option class="select-opt" id="opt-5"></option>
+                    <option class="select-opt" id="opt-6"></option>
+                    <!-- <option class="select-opt" id="opt-7"></option>
                         <option class="select-opt" id="opt-8"></option>
                         <option class="select-opt" id="opt-9"></option>
                         <option class="select-opt" id="opt-10"></option>  -->
 
-                    </select>
-                    <div id="rissue" class="result"></div>
-    
-                    <label id="lother"></label> <Br>
-                    <input style="margin-top: -35px;margin-bottom: 20px;" class="input" id="other" type="text" value="" name="other"/>
-                    <div style="margin-top: -30px" id="rother" class="result"></div>
-    
-    
-                    <input type="hidden" id="language" name="language" value="id" />
-                    <button id="submit" class="submit"></button>
-                </form>
-    
-            </div>
-    
-    
-        </center>
-        <script type="text/javascript">
-    
-            // $(document).ready(function () {
-            let params = new URLSearchParams(window.location.search)
-            var language = params.get('language')
-            var mobile = params.get('mobile')
-            var email = params.get('email')
-            var name = params.get('name')
-            var OrderID = params.get('OrderID')
-            var issue = params.get('issue')
-            var other = params.get('other')
-    
-                //new code by aakash
-        if (OrderID) {
-        document.getElementById("OrderID").setAttribute("value", OrderID)
-      }
-    //
-            document.getElementById('other').hidden = true;
-            console.log({ issue, other, language });
-            document.getElementById('issue').addEventListener("change", function () {
-                let value = this.value
-                console.log(value);
-                if (value == "Lainnya [mohon sebutkan]." || value == "Other [please specify].") {
-                    document.getElementById('other').hidden = false;
-                    document.getElementById("other").setAttribute("required", "required");
-                } else {
-                    document.getElementById('other').hidden = true;
-                    document.getElementById("other").removeAttribute("required");
-                }
-            });
-            if (language == 'id') {
-                document.getElementById('name').placeholder = "Nama Anda"
-                document.getElementById('email').placeholder = "Alamat email aktif"
-                document.getElementById('mobile').placeholder = 'Nomor telepon yang terdaftar';
-                document.getElementById('header').innerHTML = 'Silakan lengkapi informasi berikut. Tim CS kami akan menghubungimu melalui email dalam 15 menit.';
-                document.getElementById('lname').innerHTML = "Nama"
-                document.getElementById('lemail').innerHTML = "Alamat email aktif"
-                document.getElementById('lmobile').innerHTML = 'Nomor Telepon';
-                document.getElementById('lOrderID').innerHTML = 'ID Pesanan:';
-                document.getElementById('lissue').innerHTML = "Jenis Masalah"
-                document.getElementById('other').placeholder = ""
-                document.getElementById('submit').innerHTML = 'Kirim Tiket';
-                document.getElementById('opt-1').innerHTML = "Saya tidak menerima surat rekomendasi istirahat, padahal dokter telah mengirimkannya.";
-                document.getElementById('opt-2').innerHTML = "Saya tidak dapat membuka surat rekomendasi istirahat saya."
-                document.getElementById('opt-3').innerHTML = "Saya tidak dapat mengunduh surat rekomendasi istirahat saya."
-                document.getElementById('opt-4').innerHTML = "Jangka waktu rekomendasi istirahat saya salah."
-                document.getElementById('opt-5').innerHTML = "Rincian dalam surat rekomendasi istirahat saya salah."
-                document.getElementById('opt-6').innerHTML = "Lainnya [mohon sebutkan]."
-                // document.getElementById('opt-7').innerHTML = "Konsultasi berakhir sebelum waktunya."
-                // document.getElementById('opt-8').innerHTML = "Saya belum menerima hasil tes saya dan sudah lewat dari waktu yang diperkirakan."
-                // document.getElementById('opt-9').innerHTML = "Saya belum menerima kode kupon Chat dengan Dokter."
-                // document.getElementById('opt-10').innerHTML = "Lainnya (tolong jelaskan)"
+                </select>
+                <div id="rissue" class="result"></div>
 
-                let x = document.getElementById('language');
-                x.setAttribute("value", "id");
-            } else {
-                document.getElementById('name').placeholder = "Your Name"
-                document.getElementById('email').placeholder = "Active email ID"
-                document.getElementById('mobile').placeholder = 'Enter your registered mobile number';
-                document.getElementById('header').innerHTML = 'Please share the information below and our Customer Support will get back to you via email within 15 minutes';
-                document.getElementById('lname').innerHTML = "Name"
-                document.getElementById('lemail').innerHTML = "Active email ID"
-                document.getElementById('lOrderID').innerHTML = 'Order ID:';
-                document.getElementById('lissue').innerHTML = "Type of issue"
-                document.getElementById('other').placeholder = ""
-                document.getElementById('lmobile').innerHTML = 'Mobile Number';
-                document.getElementById('submit').innerHTML = 'Confirm';
-                document.getElementById('opt-1').innerHTML = "I didn’t receive my rest recommendation although my doctor has sent it."
-                document.getElementById('opt-2').innerHTML = "I can’t view my rest recommendation."
-                document.getElementById('opt-3').innerHTML = "I can’t download my rest recommendation."
-                document.getElementById('opt-4').innerHTML = "My rest recommendation period was incorrect."
-                document.getElementById('opt-5').innerHTML = "My rest recommendation details were incorrect."
-                document.getElementById('opt-6').innerHTML = "Other [please specify]."
-                // document.getElementById('opt-7').innerHTML = "Consultation ended before time."
-                // document.getElementById('opt-8').innerHTML = "I haven’t received my test results and it’s past the estimated time."
-                // document.getElementById('opt-9').innerHTML = "I haven’t received my Chat with Doctor coupon code."
-                // document.getElementById('opt-10').innerHTML = "Others (please fill)"
-                let x = document.getElementById('language');
-                x.setAttribute("value", "en");
+                <label id="lother"></label> <Br>
+                <input style="margin-top: -35px;margin-bottom: 20px;" class="input" id="other" type="text" value=""
+                    name="other" />
+                <div style="margin-top: -30px" id="rother" class="result"></div>
+
+
+                <input type="hidden" id="language" name="language" value="id" />
+                <button id="submit" class="submit"></button>
+            </form>
+
+        </div>
+
+
+    </center>
+    <script type="text/javascript">
+
+        // $(document).ready(function () {
+        let params = new URLSearchParams(window.location.search)
+        var language = params.get('language')
+        var mobile = params.get('mobile')
+        var email = params.get('email')
+        var name = params.get('name')
+        var OrderID = params.get('OrderID')
+        var issue = params.get('issue')
+        var other = params.get('other')
+
+        var customValidityMessages = {
+            'id': {
+                'name': 'Kolom ini wajib diisi.',
+                'mobile': 'Kolom ini wajib diisi.',
+                'email': 'Kolom ini wajib diisi.',
+                'OrderID': 'Kolom ini wajib diisi.',
+                'other': 'Kolom ini wajib diisi.',
+            },
+            'en': {
+                'name': 'Please fill in this field.',
+                'mobile': 'Please fill in this field.',
+                'email': 'Please fill in this field.',
+                'OrderID': 'Please fill in this field.',
+                'other': 'Please fill in this field.',
             }
-    
-            if (name && mobile && email && issue && OrderID) {
-                let n = document.getElementById('name');
-                let m = document.getElementById('mobile');
-                let e = document.getElementById('email');
-                let c = document.getElementById('issue');
-                let o = document.getElementById('OrderID');
-                let a = document.getElementById('other')
-                let s = document.getElementById('submit');
-                n.setAttribute("type", "hidden");
-                m.setAttribute("type", "hidden");
-                e.setAttribute("type", "hidden");
-                o.setAttribute("type", "hidden");
-                c.hidden = true;
-                a.hidden = true;
-                s.style.visibility = "hidden";
-                document.getElementById('rname').innerHTML = name;
-                document.getElementById('rmobile').innerHTML = mobile;
-                document.getElementById('remail').innerHTML = email;
-                document.getElementById('rissue').innerHTML = issue;
-                document.getElementById('rother').innerHTML = "";
-                document.getElementById('rOrderID').innerHTML = OrderID;
-                n.setAttribute("value", name);
-                m.setAttribute("value", mobile);
-                e.setAttribute("value", email);
-                c.setAttribute("value", issue);
-                o.setAttribute("value", OrderID);
-                a.setAttribute("value", other);
-                let sendData = { name, mobile, email, OrderID, issue }
-                if (issue == "Lainnya [mohon sebutkan]." || issue == "Other [please specify].") {
-                    document.getElementById('rother').innerHTML = other;
-                    sendData.other = other
-                }
-                myFunction(sendData)
-            }
-    
-            function myFunction(sendData) {
-                console.log(sendData)
-                let data = JSON.stringify(sendData)
-                window.parent.postMessage(JSON.stringify({
-                    event_code: "ym-client-event",
-                    data: JSON.stringify({
-                        event: {
-                            code: new Date().getTime().toString(),
-                            data
-                        },
-                    }),
-                }), "*");
-    
-                console.log(JSON.stringify({
-                    event_code: "ym-client-event",
-                    data: JSON.stringify({
-                        event: {
-                            code: new Date().getTime().toString(),
-                            data
-                        },
-                    }),
-                }))
-    
-    
+        };
+
+        // Function to set custom validity messages based on the language
+        function setCustomValidityMessages() {
+            document.getElementById('name').oninvalid = function () {
+                this.setCustomValidity(customValidityMessages[language]['name']);
             };
-    
-            // document.getElementById("submit").addEventListener("click", myFunction());
-    
-    
-        </script>
-    </body>
+            document.getElementById('name').oninput = function () {
+                this.setCustomValidity(''); // Clear custom validity message when input changes
+            };
+
+            document.getElementById('mobile').oninvalid = function () {
+                this.setCustomValidity(customValidityMessages[language]['mobile']);
+            };
+            document.getElementById('mobile').oninput = function () {
+                this.setCustomValidity(''); // Clear custom validity message when input changes
+            };
+
+            document.getElementById('email').oninvalid = function () {
+                this.setCustomValidity(customValidityMessages[language]['email']);
+            };
+            document.getElementById('email').oninput = function () {
+                this.setCustomValidity(''); // Clear custom validity message when input changes
+            };
+
+            document.getElementById('OrderID').oninvalid = function () {
+                this.setCustomValidity(customValidityMessages[language]['OrderID']);
+            };
+            document.getElementById('OrderID').oninput = function () {
+                this.setCustomValidity(''); // Clear custom validity message when input changes
+            };
+
+        }
+        // Call the function to apply the custom messages
+        setCustomValidityMessages();
+
+        //new code by aakash
+        if (OrderID) {
+            document.getElementById("OrderID").setAttribute("value", OrderID)
+        }
+        //
+        document.getElementById('other').hidden = true;
+        console.log({ issue, other, language });
+        document.getElementById('issue').addEventListener("change", function () {
+            let value = this.value
+            console.log(value);
+            if (value == "Lainnya [mohon sebutkan]." || value == "Other [please specify].") {
+                document.getElementById('other').hidden = false;
+                document.getElementById("other").setAttribute("required", "required");
+                document.getElementById('other').oninvalid = function () {
+                    this.setCustomValidity(customValidityMessages[language]['other']);
+                };
+                document.getElementById('other').oninput = function () {
+                    this.setCustomValidity(''); // Clear custom validity message when input changes
+                };
+            } else {
+                document.getElementById('other').hidden = true;
+                document.getElementById("other").removeAttribute("required");
+                document.getElementById("other").setCustomValidity('')
+            }
+        });
+        if (language == 'id') {
+            document.getElementById('name').placeholder = "Nama Anda"
+            document.getElementById('email').placeholder = "Alamat email aktif"
+            document.getElementById('mobile').placeholder = 'Nomor telepon yang terdaftar';
+            document.getElementById('header').innerHTML = 'Silakan lengkapi informasi berikut. Tim CS kami akan menghubungimu melalui email dalam 15 menit.';
+            document.getElementById('lname').innerHTML = "Nama"
+            document.getElementById('lemail').innerHTML = "Alamat email aktif"
+            document.getElementById('lmobile').innerHTML = 'Nomor Telepon';
+            document.getElementById('lOrderID').innerHTML = 'ID Pesanan:';
+            document.getElementById('lissue').innerHTML = "Jenis Masalah"
+            document.getElementById('other').placeholder = ""
+            document.getElementById('submit').innerHTML = 'Kirim Tiket';
+            document.getElementById('opt-1').innerHTML = "Saya tidak menerima surat rekomendasi istirahat, padahal dokter telah mengirimkannya.";
+            document.getElementById('opt-2').innerHTML = "Saya tidak dapat membuka surat rekomendasi istirahat saya."
+            document.getElementById('opt-3').innerHTML = "Saya tidak dapat mengunduh surat rekomendasi istirahat saya."
+            document.getElementById('opt-4').innerHTML = "Jangka waktu rekomendasi istirahat saya salah."
+            document.getElementById('opt-5').innerHTML = "Rincian dalam surat rekomendasi istirahat saya salah."
+            document.getElementById('opt-6').innerHTML = "Lainnya [mohon sebutkan]."
+            // document.getElementById('opt-7').innerHTML = "Konsultasi berakhir sebelum waktunya."
+            // document.getElementById('opt-8').innerHTML = "Saya belum menerima hasil tes saya dan sudah lewat dari waktu yang diperkirakan."
+            // document.getElementById('opt-9').innerHTML = "Saya belum menerima kode kupon Chat dengan Dokter."
+            // document.getElementById('opt-10').innerHTML = "Lainnya (tolong jelaskan)"
+
+            let x = document.getElementById('language');
+            x.setAttribute("value", "id");
+        } else {
+            document.getElementById('name').placeholder = "Your Name"
+            document.getElementById('email').placeholder = "Active email ID"
+            document.getElementById('mobile').placeholder = 'Enter your registered mobile number';
+            document.getElementById('header').innerHTML = 'Please share the information below and our Customer Support will get back to you via email within 15 minutes';
+            document.getElementById('lname').innerHTML = "Name"
+            document.getElementById('lemail').innerHTML = "Active email ID"
+            document.getElementById('lOrderID').innerHTML = 'Order ID:';
+            document.getElementById('lissue').innerHTML = "Type of issue"
+            document.getElementById('other').placeholder = ""
+            document.getElementById('lmobile').innerHTML = 'Mobile Number';
+            document.getElementById('submit').innerHTML = 'Confirm';
+            document.getElementById('opt-1').innerHTML = "I didn’t receive my rest recommendation although my doctor has sent it."
+            document.getElementById('opt-2').innerHTML = "I can’t view my rest recommendation."
+            document.getElementById('opt-3').innerHTML = "I can’t download my rest recommendation."
+            document.getElementById('opt-4').innerHTML = "My rest recommendation period was incorrect."
+            document.getElementById('opt-5').innerHTML = "My rest recommendation details were incorrect."
+            document.getElementById('opt-6').innerHTML = "Other [please specify]."
+            // document.getElementById('opt-7').innerHTML = "Consultation ended before time."
+            // document.getElementById('opt-8').innerHTML = "I haven’t received my test results and it’s past the estimated time."
+            // document.getElementById('opt-9').innerHTML = "I haven’t received my Chat with Doctor coupon code."
+            // document.getElementById('opt-10').innerHTML = "Others (please fill)"
+            let x = document.getElementById('language');
+            x.setAttribute("value", "en");
+        }
+
+        if (name && mobile && email && issue && OrderID) {
+            let n = document.getElementById('name');
+            let m = document.getElementById('mobile');
+            let e = document.getElementById('email');
+            let c = document.getElementById('issue');
+            let o = document.getElementById('OrderID');
+            let a = document.getElementById('other')
+            let s = document.getElementById('submit');
+            n.setAttribute("type", "hidden");
+            m.setAttribute("type", "hidden");
+            e.setAttribute("type", "hidden");
+            o.setAttribute("type", "hidden");
+            c.hidden = true;
+            a.hidden = true;
+            s.style.visibility = "hidden";
+            document.getElementById('rname').innerHTML = name;
+            document.getElementById('rmobile').innerHTML = mobile;
+            document.getElementById('remail').innerHTML = email;
+            document.getElementById('rissue').innerHTML = issue;
+            document.getElementById('rother').innerHTML = "";
+            document.getElementById('rOrderID').innerHTML = OrderID;
+            n.setAttribute("value", name);
+            m.setAttribute("value", mobile);
+            e.setAttribute("value", email);
+            c.setAttribute("value", issue);
+            o.setAttribute("value", OrderID);
+            a.setAttribute("value", other);
+            let sendData = { name, mobile, email, OrderID, issue }
+            if (issue == "Lainnya [mohon sebutkan]." || issue == "Other [please specify].") {
+                document.getElementById('rother').innerHTML = other;
+                sendData.other = other
+            }
+            myFunction(sendData)
+        }
+
+        function myFunction(sendData) {
+            console.log(sendData)
+            let data = JSON.stringify(sendData)
+            window.parent.postMessage(JSON.stringify({
+                event_code: "ym-client-event",
+                data: JSON.stringify({
+                    event: {
+                        code: new Date().getTime().toString(),
+                        data
+                    },
+                }),
+            }), "*");
+
+            console.log(JSON.stringify({
+                event_code: "ym-client-event",
+                data: JSON.stringify({
+                    event: {
+                        code: new Date().getTime().toString(),
+                        data
+                    },
+                }),
+            }))
+
+
+        };
+
+        // document.getElementById("submit").addEventListener("click", myFunction());
+
+
+    </script>
+</body>
